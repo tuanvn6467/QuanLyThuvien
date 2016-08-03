@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0CAA641E-D64F-4CFD-A8EA-279AC2155A63}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuanLyThuVien</RootNamespace>
+    <AssemblyName>QuanLyThuVien</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Anh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anh.Designer.cs">
+      <DependentUpon>Anh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClsSQL.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="DataConn.cs" />
+    <Compile Include="Form\FrMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrMenu.Designer.cs">
+      <DependentUpon>FrMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrLstDocGiaView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrLstDocGiaView.Designer.cs">
+      <DependentUpon>FrLstDocGiaView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrLstDocGiaEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrLstDocGiaEdit.Designer.cs">
+      <DependentUpon>FrLstDocGiaEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrLstLoaiSachView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrLstLoaiSachView.Designer.cs">
+      <DependentUpon>FrLstLoaiSachView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrLstLoaiSachEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrLstLoaiSachEdit.Designer.cs">
+      <DependentUpon>FrLstLoaiSachEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrLstTacGiaEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrLstTacGiaEdit.Designer.cs">
+      <DependentUpon>FrLstTacGiaEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrLstTacGiaView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrLstTacGiaView.Designer.cs">
+      <DependentUpon>FrLstTacGiaView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrLstNhaXuatBanView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrLstNhaXuatBanView.Designer.cs">
+      <DependentUpon>FrLstNhaXuatBanView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrLstNhaXuatBanEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrLstNhaXuatBanEdit.Designer.cs">
+      <DependentUpon>FrLstNhaXuatBanEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrCapNhatSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrCapNhatSach.Designer.cs">
+      <DependentUpon>FrCapNhatSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrLstNhaCCView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrLstNhaCCView.Designer.cs">
+      <DependentUpon>FrLstNhaCCView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrLstNhaCCEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrLstNhaCCEdit.Designer.cs">
+      <DependentUpon>FrLstNhaCCEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrLstSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrLstSach.Designer.cs">
+      <DependentUpon>FrLstSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrMuonTra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrMuonTra.Designer.cs">
+      <DependentUpon>FrMuonTra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrDoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrDoiMatKhau.Designer.cs">
+      <DependentUpon>FrDoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form Report\FrInLstSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Report\FrInLstSach.Designer.cs">
+      <DependentUpon>FrInLstSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrTimKiemDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrTimKiemDocGia.Designer.cs">
+      <DependentUpon>FrTimKiemDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrInDg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrInDg.Designer.cs">
+      <DependentUpon>FrInDg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrTimKiemSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrTimKiemSach.Designer.cs">
+      <DependentUpon>FrTimKiemSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ketnoi.cs" />
+    <Compile Include="ketnoiLstSach.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLTVDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLTVDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLTVDataSetDg.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLTVDataSetDg.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLTVDataSetLstSach.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLTVDataSetLstSach.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Anh.resx">
+      <DependentUpon>Anh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrCapNhatSach.resx">
+      <DependentUpon>FrCapNhatSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrLstDocGiaEdit.resx">
+      <DependentUpon>FrLstDocGiaEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrLstLoaiSachEdit.resx">
+      <DependentUpon>FrLstLoaiSachEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrLstNhaCCEdit.resx">
+      <DependentUpon>FrLstNhaCCEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrLstNhaCCView.resx">
+      <DependentUpon>FrLstNhaCCView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrLstNhaXuatBanEdit.resx">
+      <DependentUpon>FrLstNhaXuatBanEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrLstNhaXuatBanView.resx">
+      <DependentUpon>FrLstNhaXuatBanView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrLstTacGiaEdit.resx">
+      <DependentUpon>FrLstTacGiaEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrLstTacGiaView.resx">
+      <DependentUpon>FrLstTacGiaView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrMenu.resx">
+      <DependentUpon>FrMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrLstDocGiaView.resx">
+      <DependentUpon>FrLstDocGiaView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrLstLoaiSachView.resx">
+      <DependentUpon>FrLstLoaiSachView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrLstSach.resx">
+      <DependentUpon>FrLstSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrMuonTra.resx">
+      <DependentUpon>FrMuonTra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrDoiMatKhau.resx">
+      <DependentUpon>FrDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Report\FrInLstSach.resx">
+      <DependentUpon>FrInLstSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrTimKiemDocGia.resx">
+      <DependentUpon>FrTimKiemDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrInDg.resx">
+      <DependentUpon>FrInDg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrTimKiemSach.resx">
+      <DependentUpon>FrTimKiemSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Report\RpInLstSach.rdlc" />
+    <EmbeddedResource Include="RpInDg.rdlc" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="QLTVDataSet.xsc">
+      <DependentUpon>QLTVDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLTVDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLTVDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLTVDataSet.xss">
+      <DependentUpon>QLTVDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLTVDataSetDg.xsc">
+      <DependentUpon>QLTVDataSetDg.xsd</DependentUpon>
+    </None>
+    <None Include="QLTVDataSetDg.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLTVDataSetDg.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLTVDataSetDg.xss">
+      <DependentUpon>QLTVDataSetDg.xsd</DependentUpon>
+    </None>
+    <None Include="QLTVDataSetLstSach.xsc">
+      <DependentUpon>QLTVDataSetLstSach.xsd</DependentUpon>
+    </None>
+    <None Include="QLTVDataSetLstSach.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLTVDataSetLstSach.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLTVDataSetLstSach.xss">
+      <DependentUpon>QLTVDataSetLstSach.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

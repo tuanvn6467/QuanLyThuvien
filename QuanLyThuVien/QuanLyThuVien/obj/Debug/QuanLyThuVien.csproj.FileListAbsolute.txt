@@ -1,0 +1,134 @@
+D:\C#\Đề tài NCKH\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
+D:\C#\Đề tài NCKH\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe
+D:\C#\Đề tài NCKH\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.pdb
+D:\C#\Đề tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csprojResolveAssemblyReference.cache
+D:\C#\Đề tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Properties.Resources.resources
+D:\C#\Đề tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.GenerateResource.Cache
+D:\C#\Đề tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
+D:\C#\Đề tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
+D:\C#\Đề tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrDangNhap.resources
+D:\C#\Đề tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrMenu.resources
+D:\C#\Đề tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstDocGia.resources
+D:\C#\Đề tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstDocGiaEdit.resources
+D:\C#\Đề tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstLoaiSachEdit.resources
+D:\C#\Đề tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstLoaiSachView.resources
+D:\C#\Đề tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstTacGiaEdit.resources
+D:\C#\Đề tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstTacGiaView.resources
+D:\C#\Đề tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstNhaXuatBanEdit.resources
+D:\C#\Đề tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstNhaXuatBanView.resources
+D:\C#\Đề tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrCapNhatSach.resources
+D:\C#\Đề tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstNhaCCEdit.resources
+D:\C#\Đề tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstNhaCC.resources
+D:\C#\Đề tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstSach.resources
+C:\Users\Tuan_Pham\Desktop\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
+C:\Users\Tuan_Pham\Desktop\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
+C:\Users\Tuan_Pham\Desktop\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
+C:\Users\Tuan_Pham\Desktop\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe
+C:\Users\Tuan_Pham\Desktop\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.pdb
+C:\Users\Tuan_Pham\Desktop\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csprojResolveAssemblyReference.cache
+C:\Users\Tuan_Pham\Desktop\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrDangNhap.resources
+C:\Users\Tuan_Pham\Desktop\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrCapNhatSach.resources
+C:\Users\Tuan_Pham\Desktop\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstDocGiaEdit.resources
+C:\Users\Tuan_Pham\Desktop\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstLoaiSachEdit.resources
+C:\Users\Tuan_Pham\Desktop\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstNhaCCEdit.resources
+C:\Users\Tuan_Pham\Desktop\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstNhaCC.resources
+C:\Users\Tuan_Pham\Desktop\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstNhaXuatBanEdit.resources
+C:\Users\Tuan_Pham\Desktop\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstNhaXuatBanView.resources
+C:\Users\Tuan_Pham\Desktop\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstTacGiaEdit.resources
+C:\Users\Tuan_Pham\Desktop\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstTacGiaView.resources
+C:\Users\Tuan_Pham\Desktop\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrMenu.resources
+C:\Users\Tuan_Pham\Desktop\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstDocGia.resources
+C:\Users\Tuan_Pham\Desktop\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstLoaiSachView.resources
+C:\Users\Tuan_Pham\Desktop\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstSach.resources
+C:\Users\Tuan_Pham\Desktop\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Properties.Resources.resources
+C:\Users\Tuan_Pham\Desktop\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.GenerateResource.Cache
+D:\C#\Ð_ tài NCKH\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
+D:\C#\Ð_ tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
+D:\C#\Ð_ tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
+D:\C#\Ð_ tài NCKH\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe
+D:\C#\Ð_ tài NCKH\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.pdb
+D:\C#\Ð_ tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csprojResolveAssemblyReference.cache
+D:\C#\Ð_ tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrDangNhap.resources
+D:\C#\Ð_ tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrCapNhatSach.resources
+D:\C#\Ð_ tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstDocGiaEdit.resources
+D:\C#\Ð_ tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstLoaiSachEdit.resources
+D:\C#\Ð_ tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstNhaCCEdit.resources
+D:\C#\Ð_ tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstNhaCC.resources
+D:\C#\Ð_ tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstNhaXuatBanEdit.resources
+D:\C#\Ð_ tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstNhaXuatBanView.resources
+D:\C#\Ð_ tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstTacGiaEdit.resources
+D:\C#\Ð_ tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstTacGiaView.resources
+D:\C#\Ð_ tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrMenu.resources
+D:\C#\Ð_ tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstDocGia.resources
+D:\C#\Ð_ tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstLoaiSachView.resources
+D:\C#\Ð_ tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstSach.resources
+D:\C#\Ð_ tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Properties.Resources.resources
+D:\C#\Ð_ tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.GenerateResource.Cache
+D:\C#\Ð_ tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrMuonTra.resources
+D:\C#\Ð_ tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrInDG.resources
+D:\C#\Ð_ tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\RdlCompile.cache
+D:\C#\Ð_ tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\RdlCompile.compiled
+D:\C#\Ð_ tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrPCnSach.resources
+D:\C#\Ð_ tài NCKH\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrDoiMatKhau.resources
+D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
+D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
+D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
+D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csprojResolveAssemblyReference.cache
+D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrDangNhap.resources
+D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrCapNhatSach.resources
+D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstDocGiaEdit.resources
+D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstLoaiSachEdit.resources
+D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstNhaCCEdit.resources
+D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstNhaCC.resources
+D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstNhaXuatBanEdit.resources
+D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstNhaXuatBanView.resources
+D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstTacGiaEdit.resources
+D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstTacGiaView.resources
+D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrMenu.resources
+D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstDocGia.resources
+D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstLoaiSachView.resources
+D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstSach.resources
+D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrMuonTra.resources
+D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrDoiMatKhau.resources
+D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Properties.Resources.resources
+D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.GenerateResource.Cache
+D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\RdlCompile.cache
+D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\RdlCompile.compiled
+D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe
+D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.pdb
+D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrInLstSach.resources
+D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrTimKiemDocGia.resources
+D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Anh.resources
+D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrInDg.resources
+D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrTimKiemSach.resources
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.pdb
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csprojResolveAssemblyReference.cache
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Anh.resources
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrDangNhap.resources
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrCapNhatSach.resources
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstDocGiaEdit.resources
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstLoaiSachEdit.resources
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstNhaCCEdit.resources
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstNhaCC.resources
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstNhaXuatBanEdit.resources
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstNhaXuatBanView.resources
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstTacGiaEdit.resources
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstTacGiaView.resources
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrMenu.resources
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstDocGia.resources
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstLoaiSachView.resources
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstSach.resources
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrMuonTra.resources
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrDoiMatKhau.resources
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrInLstSach.resources
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrTimKiemDocGia.resources
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrInDg.resources
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrTimKiemSach.resources
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Properties.Resources.resources
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.GenerateResource.Cache
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\RdlCompile.cache
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\RdlCompile.compiled
