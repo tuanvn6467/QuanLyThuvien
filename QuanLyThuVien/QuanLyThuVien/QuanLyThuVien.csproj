@@ -54,7 +54,7 @@
       <DependentUpon>Anh.cs</DependentUpon>
     </Compile>
     <Compile Include="ClsSQL.cs" />
-    <Compile Include="Constants.cs" />
+    <Compile Include="Utilities\Constants.cs" />
     <Compile Include="DataConn.cs" />
     <Compile Include="Form\FrMenu.cs">
       <SubType>Form</SubType>
@@ -195,6 +195,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLTVDataSetLstSach.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Utilities\Utils.cs" />
     <EmbeddedResource Include="Anh.resx">
       <DependentUpon>Anh.cs</DependentUpon>
     </EmbeddedResource>
@@ -313,7 +314,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
