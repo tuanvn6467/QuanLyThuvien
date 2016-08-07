@@ -93,6 +93,7 @@ namespace QuanLyThuVien
             txtNgayTra.Value = DateTime.Now;
             txtGhiChu.Text = "";
             txtSoPhieu.ReadOnly = false;
+            cbPTPM.Enabled = true;
             btnThem.Enabled = true;
             btnSua.Enabled = false;
             btnXoa.Enabled = false;
@@ -172,7 +173,7 @@ namespace QuanLyThuVien
                                          "Ngay_TraDuKien," +
                                          "Ghi_Chu) " +
                                          "values(@sophieu,@manv,@ngaylap,@madg,@ngaymuon,@ngaytra,@ghichu)", con);
-                    cmd.Parameters.AddWithValue("@sophieu", txtSoPhieu.Text);
+                    cmd.Parameters.AddWithValue("@sophieu", cbPTPM.Text + txtSoPhieu.Text);
                     cmd.Parameters.AddWithValue("@manv", cbMaNV.Text);
                     cmd.Parameters.AddWithValue("@ngaylap", txtNgayLap.Value);
                     cmd.Parameters.AddWithValue("@madg", cbMaDG.Text);
@@ -183,7 +184,7 @@ namespace QuanLyThuVien
                     con.Close();
 
                     DataGridViewRow row = grSachMuon.CurrentRow;
-                    for (int i = 1; i < grSachMuon.Rows.Count; i++)
+                    for (int i = 0; i < grSachMuon.Rows.Count; i++)
                     {
                         if (grSachMuon.Rows[i].Cells["Ma_Sach1"].Value != null)
                         {
@@ -195,7 +196,7 @@ namespace QuanLyThuVien
 
                             con.Open();
                             cmd = new SqlCommand("insert into MuonTra(So_Phieu,Ma_Sach,So_Luong) values(@sophieu,@masach,@soluong)", con);
-                            cmd.Parameters.AddWithValue("@sophieu", txtSoPhieu.Text);
+                            cmd.Parameters.AddWithValue("@sophieu", cbPTPM.Text + txtSoPhieu.Text);
                             cmd.Parameters.AddWithValue("@masach", grSachMuon.Rows[i].Cells["Ma_Sach1"].Value);
                             cmd.Parameters.AddWithValue("@soluong", grSachMuon.Rows[i].Cells["So_Luong1"].Value);
                             cmd.ExecuteNonQuery();
@@ -222,18 +223,18 @@ namespace QuanLyThuVien
         {
             con.Open();
             cmd = new SqlCommand("update LstSach set Ton_Kho = Ton_Kho + (select Sum(So_Luong) from MuonTra where So_Phieu = @sophieu)", con);
-            cmd.Parameters.AddWithValue("@sophieu", txtSoPhieu.Text);
+            cmd.Parameters.AddWithValue("@sophieu", cbPTPM.Text + txtSoPhieu.Text);
             cmd.ExecuteNonQuery();
             con.Close();
 
             con.Open();
             cmd = new SqlCommand("delete MuonTra where So_Phieu=@sophieu", con);
-            cmd.Parameters.AddWithValue("@sophieu", txtSoPhieu.Text);
+            cmd.Parameters.AddWithValue("@sophieu", cbPTPM.Text + txtSoPhieu.Text);
             cmd.ExecuteNonQuery();
             con.Close();
             con.Open();
             cmd = new SqlCommand("delete CTMuonTra where So_Phieu=@sophieu", con);
-            cmd.Parameters.AddWithValue("@sophieu", txtSoPhieu.Text);
+            cmd.Parameters.AddWithValue("@sophieu", cbPTPM.Text + txtSoPhieu.Text);
             cmd.ExecuteNonQuery();
             con.Close();
 
@@ -271,20 +272,30 @@ namespace QuanLyThuVien
         private void grMuonTra_CellDoubleClick_1(object sender, DataGridViewCellEventArgs e)
         {
             int r = grMuonTra.CurrentCell.RowIndex;
-            txtSoPhieu.Text = grMuonTra.Rows[r].Cells["So_Phieu"].Value.ToString();
-            txtNgayMuon.Text = grMuonTra.Rows[e.RowIndex].Cells["Ngay_Muon"].Value.ToString();
+            var sophieu = grMuonTra.Rows[r].Cells["So_Phieu"].Value.ToString();
+            if (sophieu.Contains("PM"))
+            {
+                cbPTPM.Text = "PM";
+            }
+            else
+            {
+                cbPTPM.Text = "PT";
+            }
+            txtSoPhieu.Text = sophieu.Replace("PM", "").Replace("PT", "");
+            txtNgayMuon.Value = DateTime.Parse(grMuonTra.Rows[e.RowIndex].Cells["Ngay_Muon"].Value.ToString());
             cbMaNV.Text = grMuonTra.Rows[e.RowIndex].Cells["Ma_NV"].Value.ToString();
             cbMaDG.Text = grMuonTra.Rows[e.RowIndex].Cells["Ma_DocGia"].Value.ToString();
-            txtNgayLap.Text = grMuonTra.Rows[e.RowIndex].Cells["Ngay_Lap"].Value.ToString();
-            txtNgayTra.Text = grMuonTra.Rows[e.RowIndex].Cells["Ngay_Tra"].Value.ToString();
+            txtNgayLap.Value = DateTime.Parse(grMuonTra.Rows[e.RowIndex].Cells["Ngay_Lap"].Value.ToString());
+            txtNgayTra.Value = DateTime.Parse(grMuonTra.Rows[e.RowIndex].Cells["Ngay_Tra"].Value.ToString());
             txtGhiChu.Text = grMuonTra.Rows[e.RowIndex].Cells["Ghi_Chu"].Value.ToString();
+            cbPTPM.Enabled = false;
             txtSoPhieu.ReadOnly = true;
             btnThem.Enabled = false;
             btnSua.Enabled = true;
             btnXoa.Enabled = true;
 
             DataTable dt = new DataTable();
-            dt = Utils.GetListMuonTra(txtSoPhieu.Text);
+            dt = Utils.GetListMuonTra(cbPTPM.Text + txtSoPhieu.Text);
             grSachMuon.AutoGenerateColumns = false;
             grSachMuon.DataSource = dt;
             //grSachMuon.Columns["So_Phieu"].Visible = false;
@@ -337,7 +348,7 @@ namespace QuanLyThuVien
                         new SqlCommand(
                             "update CTMuonTra set Ma_NV=@manv,Ma_DocGia=@madg,Ngay_Lap= @ngaylap,Ngay_Muon=@ngaymuon,Ngay_TraDuKien=@ngaytra,Ghi_Chu=@ghichu where So_Phieu=@sophieu",
                             con);
-                    cmd.Parameters.AddWithValue("@sophieu", txtSoPhieu.Text);
+                    cmd.Parameters.AddWithValue("@sophieu", cbPTPM.Text + txtSoPhieu.Text);
                     cmd.Parameters.AddWithValue("@manv", cbMaNV.Text);
                     cmd.Parameters.AddWithValue("@madg", cbMaDG.Text);
                     cmd.Parameters.AddWithValue("@ngaylap", txtNgayLap.Text);
@@ -349,34 +360,21 @@ namespace QuanLyThuVien
 
 
                     DataTable dt = new DataTable();
-                    dt = Utils.GetListMuonTra(txtSoPhieu.Text);
+                    dt = Utils.GetListMuonTra(cbPTPM.Text + txtSoPhieu.Text);
 
                     //DataGridViewRow row = grSachMuon.CurrentRow;
-
-                    con.Open();
-                    cmd =
-                        new SqlCommand(
-                            "update LstSach set Ton_Kho = Ton_Kho + (select Sum(So_Luong) from MuonTra where So_Phieu = @sophieu)",
-                            con);
-                    cmd.Parameters.AddWithValue("@sophieu", txtSoPhieu.Text);
-                    cmd.ExecuteNonQuery();
-                    con.Close();
-
-                    con.Open();
-                    cmd = new SqlCommand("delete from MuonTra where So_Phieu=@sophieu", con);
-                    cmd.Parameters.AddWithValue("@sophieu", txtSoPhieu.Text);
-                    cmd.ExecuteNonQuery();
-                    con.Close();
 
                     for (int i = 0; i < grSachMuon.Rows.Count; i++)
                     {
                         if (grSachMuon.Rows[i].Cells["Ma_Sach1"].Value != null)
                         {
                             con.Open();
-                            cmd = new SqlCommand("insert MuonTra values(@sophieu, @masach, @soluong)", con);
-                            cmd.Parameters.AddWithValue("@sophieu", txtSoPhieu.Text);
+                            cmd =
+                                new SqlCommand(
+                                    "update LstSach set Ton_Kho = Ton_Kho + (select Sum(So_Luong) from MuonTra where So_Phieu = @sophieu) where Ma_Sach = @masach ",
+                                    con);
+                            cmd.Parameters.AddWithValue("@sophieu", cbPTPM.Text + txtSoPhieu.Text);
                             cmd.Parameters.AddWithValue("@masach", grSachMuon.Rows[i].Cells["Ma_Sach1"].Value);
-                            cmd.Parameters.AddWithValue("@soluong", grSachMuon.Rows[i].Cells["So_Luong1"].Value);
                             cmd.ExecuteNonQuery();
                             con.Close();
 
@@ -389,6 +387,19 @@ namespace QuanLyThuVien
                             cmd.ExecuteNonQuery();
                             con.Close();
 
+                            con.Open();
+                            cmd = new SqlCommand("delete from MuonTra where So_Phieu=@sophieu and Ma_Sach = @masach", con);
+                            cmd.Parameters.AddWithValue("@sophieu", cbPTPM.Text + txtSoPhieu.Text);
+                            cmd.Parameters.AddWithValue("@masach", grSachMuon.Rows[i].Cells["Ma_Sach1"].Value);
+                            cmd.ExecuteNonQuery();
+                            con.Close();
+
+                            con.Open();
+                            cmd = new SqlCommand("insert MuonTra values(@sophieu, @masach, @soluong)", con);
+                            cmd.Parameters.AddWithValue("@sophieu", cbPTPM.Text + txtSoPhieu.Text);
+                            cmd.Parameters.AddWithValue("@masach", grSachMuon.Rows[i].Cells["Ma_Sach1"].Value);
+                            cmd.Parameters.AddWithValue("@soluong", grSachMuon.Rows[i].Cells["So_Luong1"].Value);
+                            cmd.ExecuteNonQuery();
                             con.Close();
                         }
                     }
@@ -423,6 +434,7 @@ namespace QuanLyThuVien
             btnSua.Enabled = false;
             btnXoa.Enabled = false;
             txtSoPhieu.ReadOnly = false;
+            cbPTPM.Enabled = true;
             txtSoPhieu.Text = "";
             cbMaNV.Text = "";
             txtTenNV.Text = "";
@@ -432,6 +444,8 @@ namespace QuanLyThuVien
             txtNgayLap.Value = DateTime.Now;
             txtNgayMuon.Value = DateTime.Now;
             txtNgayTra.Value = DateTime.Now;
+            DataTable dt = new DataTable();
+            grSachMuon.DataSource = dt;
             grSachMuon.Columns["Ton_Kho"].Visible = true;
         }
 

@@ -19,7 +19,7 @@ namespace QuanLyThuVien
         {
             con.Open();
             DataTable dt = new DataTable();
-            adapt = new SqlDataAdapter("select So_Phieu,CTMuonTra.Ma_NV,CTMuonTra.Ma_DocGia,LstDocGia.Ngay_Lap,LstDocGia.Ten_DocGia, LstNhanVien.Ten_NV,Ngay_Muon, Ngay_TraDuKien,Ghi_Chu from CTMuonTra inner join LstDocGia on CTMuonTra.Ma_DocGia = LstDocGia.Ma_DocGia inner join LstNhanVien on CTMuonTra.Ma_NV = LstNhanVien.Ma_NV", con);
+            adapt = new SqlDataAdapter("select So_Phieu,CTMuonTra.Ma_NV,CTMuonTra.Ma_DocGia,CTMuonTra.Ngay_Lap,LstDocGia.Ten_DocGia, LstNhanVien.Ten_NV,Ngay_Muon, Ngay_TraDuKien,Ghi_Chu from CTMuonTra inner join LstDocGia on CTMuonTra.Ma_DocGia = LstDocGia.Ma_DocGia inner join LstNhanVien on CTMuonTra.Ma_NV = LstNhanVien.Ma_NV", con);
             adapt.Fill(dt);
             con.Close();
             return dt;
@@ -102,6 +102,16 @@ namespace QuanLyThuVien
                         "lower(Ghi_Chu) like N'%" + text + "%'" +
                         "";
             adapt = new SqlDataAdapter(query, con);
+            adapt.Fill(dt);
+            con.Close();
+            return dt;
+        }
+
+        public static DataTable get_ThongTinDocGiaMuonSach()
+        {
+            con.Open();
+            DataTable dt = new DataTable();
+            adapt = new SqlDataAdapter("select ctmt.So_Phieu,ctmt.Ma_DocGia, dg.Ten_DocGia, mt.Ma_Sach, mt.So_Luong, ls.Ten_Sach, ctmt.Ngay_Muon, ctmt.Ngay_TraDuKien from CTMuonTra ctmt left join LstDocGia dg on dg.Ma_DocGia = ctmt.Ma_DocGia left join MuonTra mt on mt.So_Phieu = ctmt.So_Phieu left join LstSach ls on ls.Ma_Sach = mt.Ma_Sach", con);
             adapt.Fill(dt);
             con.Close();
             return dt;

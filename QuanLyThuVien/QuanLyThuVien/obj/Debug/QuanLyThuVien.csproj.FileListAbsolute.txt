@@ -101,16 +101,12 @@ D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVi
 D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Anh.resources
 D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrInDg.resources
 D:\C#\Ð_ tài NCKH\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrTimKiemSach.resources
-D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
-D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
-D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
-D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe
-D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.pdb
-D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csprojResolveAssemblyReference.cache
 D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Anh.resources
 D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrDangNhap.resources
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrBaoCaoDocGiaMuonTra1.resources
 D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrCapNhatSach.resources
 D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstDocGiaEdit.resources
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrBaoCaoDocGiaMuonTra.resources
 D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstLoaiSachEdit.resources
 D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstNhaCCEdit.resources
 D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FrLstNhaCC.resources
@@ -132,3 +128,9 @@ D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Pro
 D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.GenerateResource.Cache
 D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\RdlCompile.cache
 D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\RdlCompile.compiled
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.pdb
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
+D:\Project\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csprojResolveAssemblyReference.cache

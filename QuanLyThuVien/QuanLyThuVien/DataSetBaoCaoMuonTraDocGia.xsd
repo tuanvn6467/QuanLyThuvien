@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetBaoCaoMuonTraDocGia" targetNamespace="http://tempuri.org/DataSetBaoCaoMuonTraDocGia.xsd" xmlns:mstns="http://tempuri.org/DataSetBaoCaoMuonTraDocGia.xsd" xmlns="http://tempuri.org/DataSetBaoCaoMuonTraDocGia.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLTVConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLTVConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QuanLyThuVien.Properties.Settings.GlobalReference.Default.QLTVConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLTVConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select distinct
+sm.Ma_DocGia,
+sm.Ten_DocGia, 
+sm.Ma_Sach, 
+sm.Ten_Sach, 
+sm.So_Luong soluongsachmuon, 
+sm.Ngay_Muon ,
+sm.Ngay_TraDuKien,
+isnull(st.So_Luong,0) soluongsachtra,
+st.Ngay_Lap ngaytra,
+isnull(sm.So_Luong - st.So_Luong,0) soluongchuatra,
+datediff(day,sm.Ngay_TraDuKien,getdate()) ngayquahan
+from ThongKeSachMuon sm
+left join ThongKeSachTra st on st.Ma_DocGia = sm.Ma_DocGia
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Ma_DocGia" DataSetColumn="Ma_DocGia" />
+              <Mapping SourceColumn="Ten_DocGia" DataSetColumn="Ten_DocGia" />
+              <Mapping SourceColumn="Ma_Sach" DataSetColumn="Ma_Sach" />
+              <Mapping SourceColumn="Ten_Sach" DataSetColumn="Ten_Sach" />
+              <Mapping SourceColumn="soluongsachmuon" DataSetColumn="soluongsachmuon" />
+              <Mapping SourceColumn="Ngay_Muon" DataSetColumn="Ngay_Muon" />
+              <Mapping SourceColumn="Ngay_TraDuKien" DataSetColumn="Ngay_TraDuKien" />
+              <Mapping SourceColumn="soluongsachtra" DataSetColumn="soluongsachtra" />
+              <Mapping SourceColumn="ngaytra" DataSetColumn="ngaytra" />
+              <Mapping SourceColumn="soluongchuatra" DataSetColumn="soluongchuatra" />
+              <Mapping SourceColumn="ngayquahan" DataSetColumn="ngayquahan" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetBaoCaoMuonTraDocGia" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetBaoCaoMuonTraDocGia" msprop:Generator_UserDSName="DataSetBaoCaoMuonTraDocGia">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Ma_DocGia" msprop:Generator_ColumnVarNameInTable="columnMa_DocGia" msprop:Generator_ColumnPropNameInRow="Ma_DocGia" msprop:Generator_ColumnPropNameInTable="Ma_DocGiaColumn" msprop:Generator_UserColumnName="Ma_DocGia" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ten_DocGia" msprop:Generator_ColumnVarNameInTable="columnTen_DocGia" msprop:Generator_ColumnPropNameInRow="Ten_DocGia" msprop:Generator_ColumnPropNameInTable="Ten_DocGiaColumn" msprop:Generator_UserColumnName="Ten_DocGia" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ma_Sach" msprop:Generator_ColumnVarNameInTable="columnMa_Sach" msprop:Generator_ColumnPropNameInRow="Ma_Sach" msprop:Generator_ColumnPropNameInTable="Ma_SachColumn" msprop:Generator_UserColumnName="Ma_Sach" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ten_Sach" msprop:Generator_ColumnVarNameInTable="columnTen_Sach" msprop:Generator_ColumnPropNameInRow="Ten_Sach" msprop:Generator_ColumnPropNameInTable="Ten_SachColumn" msprop:Generator_UserColumnName="Ten_Sach" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="soluongsachmuon" msprop:Generator_ColumnVarNameInTable="columnsoluongsachmuon" msprop:Generator_ColumnPropNameInRow="soluongsachmuon" msprop:Generator_ColumnPropNameInTable="soluongsachmuonColumn" msprop:Generator_UserColumnName="soluongsachmuon" type="xs:int" minOccurs="0" />
+              <xs:element name="Ngay_Muon" msprop:Generator_ColumnVarNameInTable="columnNgay_Muon" msprop:Generator_ColumnPropNameInRow="Ngay_Muon" msprop:Generator_ColumnPropNameInTable="Ngay_MuonColumn" msprop:Generator_UserColumnName="Ngay_Muon" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Ngay_TraDuKien" msprop:Generator_ColumnVarNameInTable="columnNgay_TraDuKien" msprop:Generator_ColumnPropNameInRow="Ngay_TraDuKien" msprop:Generator_ColumnPropNameInTable="Ngay_TraDuKienColumn" msprop:Generator_UserColumnName="Ngay_TraDuKien" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="soluongsachtra" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnsoluongsachtra" msprop:Generator_ColumnPropNameInRow="soluongsachtra" msprop:Generator_ColumnPropNameInTable="soluongsachtraColumn" msprop:Generator_UserColumnName="soluongsachtra" type="xs:int" minOccurs="0" />
+              <xs:element name="ngaytra" msprop:Generator_ColumnVarNameInTable="columnngaytra" msprop:Generator_ColumnPropNameInRow="ngaytra" msprop:Generator_ColumnPropNameInTable="ngaytraColumn" msprop:Generator_UserColumnName="ngaytra" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="soluongchuatra" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnsoluongchuatra" msprop:Generator_ColumnPropNameInRow="soluongchuatra" msprop:Generator_ColumnPropNameInTable="soluongchuatraColumn" msprop:Generator_UserColumnName="soluongchuatra" type="xs:int" minOccurs="0" />
+              <xs:element name="ngayquahan" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnngayquahan" msprop:Generator_ColumnPropNameInRow="ngayquahan" msprop:Generator_ColumnPropNameInTable="ngayquahanColumn" msprop:Generator_UserColumnName="ngayquahan" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

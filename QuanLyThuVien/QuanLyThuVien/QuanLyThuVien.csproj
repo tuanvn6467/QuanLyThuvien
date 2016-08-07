@@ -54,6 +54,23 @@
       <DependentUpon>Anh.cs</DependentUpon>
     </Compile>
     <Compile Include="ClsSQL.cs" />
+    <Compile Include="DataSetBaoCaoMuonTraDocGia.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetBaoCaoMuonTraDocGia.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrBaoCaoDocGiaMuonTra1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrBaoCaoDocGiaMuonTra1.Designer.cs">
+      <DependentUpon>FrBaoCaoDocGiaMuonTra1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrBaoCaoDocGiaMuonTra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrBaoCaoDocGiaMuonTra.Designer.cs">
+      <DependentUpon>FrBaoCaoDocGiaMuonTra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utilities\Constants.cs" />
     <Compile Include="DataConn.cs" />
     <Compile Include="Form\FrMenu.cs">
@@ -202,11 +219,19 @@
     <EmbeddedResource Include="Form\DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrBaoCaoDocGiaMuonTra1.resx">
+      <DependentUpon>FrBaoCaoDocGiaMuonTra1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\FrCapNhatSach.resx">
       <DependentUpon>FrCapNhatSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FrLstDocGiaEdit.resx">
       <DependentUpon>FrLstDocGiaEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrBaoCaoDocGiaMuonTra.resx">
+      <DependentUpon>FrBaoCaoDocGiaMuonTra.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FrLstLoaiSachEdit.resx">
       <DependentUpon>FrLstLoaiSachEdit.cs</DependentUpon>
@@ -268,8 +293,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ReportBaoCaoDocGiaMuonTra.rdlc" />
     <EmbeddedResource Include="Report\RpInLstSach.rdlc" />
     <EmbeddedResource Include="RpInDg.rdlc" />
+    <None Include="DataSetBaoCaoMuonTraDocGia.xsc">
+      <DependentUpon>DataSetBaoCaoMuonTraDocGia.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetBaoCaoMuonTraDocGia.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetBaoCaoMuonTraDocGia.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetBaoCaoMuonTraDocGia.xss">
+      <DependentUpon>DataSetBaoCaoMuonTraDocGia.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
