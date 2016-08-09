@@ -1185,11 +1185,10 @@ sm.Ngay_Muon ,
 sm.Ngay_TraDuKien,
 isnull(st.So_Luong,0) soluongsachtra,
 st.Ngay_Lap ngaytra,
-isnull(sm.So_Luong - st.So_Luong,0) soluongchuatra,
+isnull(sm.So_Luong - isnull(st.So_Luong,0),0) soluongchuatra,
 datediff(day,sm.Ngay_TraDuKien,getdate()) ngayquahan
 from ThongKeSachMuon sm
-left join ThongKeSachTra st on st.Ma_DocGia = sm.Ma_DocGia
-";
+left join ThongKeSachTra st on st.Ma_DocGia = sm.Ma_DocGia";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         

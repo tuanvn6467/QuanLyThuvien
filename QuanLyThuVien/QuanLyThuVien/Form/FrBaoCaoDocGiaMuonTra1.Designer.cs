@@ -30,13 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.DataSetBaoCaoMuonTraDocGia = new QuanLyThuVien.DataSetBaoCaoMuonTraDocGia();
             this.DataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.DataSetBaoCaoMuonTraDocGia = new QuanLyThuVien.DataSetBaoCaoMuonTraDocGia();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.DataTable1TableAdapter = new QuanLyThuVien.DataSetBaoCaoMuonTraDocGiaTableAdapters.DataTable1TableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.DataSetBaoCaoMuonTraDocGia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataTable1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataSetBaoCaoMuonTraDocGia)).BeginInit();
             this.SuspendLayout();
+            // 
+            // DataTable1BindingSource
+            // 
+            this.DataTable1BindingSource.DataMember = "DataTable1";
+            this.DataTable1BindingSource.DataSource = this.DataSetBaoCaoMuonTraDocGia;
+            // 
+            // DataSetBaoCaoMuonTraDocGia
+            // 
+            this.DataSetBaoCaoMuonTraDocGia.DataSetName = "DataSetBaoCaoMuonTraDocGia";
+            this.DataSetBaoCaoMuonTraDocGia.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reportViewer1
             // 
@@ -49,16 +59,6 @@
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.Size = new System.Drawing.Size(1267, 438);
             this.reportViewer1.TabIndex = 0;
-            // 
-            // DataSetBaoCaoMuonTraDocGia
-            // 
-            this.DataSetBaoCaoMuonTraDocGia.DataSetName = "DataSetBaoCaoMuonTraDocGia";
-            this.DataSetBaoCaoMuonTraDocGia.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // DataTable1BindingSource
-            // 
-            this.DataTable1BindingSource.DataMember = "DataTable1";
-            this.DataTable1BindingSource.DataSource = this.DataSetBaoCaoMuonTraDocGia;
             // 
             // DataTable1TableAdapter
             // 
@@ -76,8 +76,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Báo Cáo Mượn Trả";
             this.Load += new System.EventHandler(this.FrLstDocGia_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.DataSetBaoCaoMuonTraDocGia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataTable1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataSetBaoCaoMuonTraDocGia)).EndInit();
             this.ResumeLayout(false);
 
         }
